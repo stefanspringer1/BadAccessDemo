@@ -57,7 +57,7 @@ struct Test {
 
         if #available(macOS 10.15, *) {
             await withTaskGroup(of: Void.self) { group in
-                if let file = run1.next { // taking only one file for simplicity of teh demo code
+                if let file = run1.next { // taking only one file for simplicity of the demo code
                     print("processing \(file.path)...")
                     do {
                         try await processFile(file: file)
@@ -81,7 +81,7 @@ struct Test {
 
         if #available(macOS 10.15, *) {
             await withTaskGroup(of: Void.self) { group in
-                if let file = run2.next { // taking only one file for simplicity of teh demo code
+                if let file = run2.next { // taking only one file for simplicity of the demo code
                     print("processing \(file.path)...")
                     group.addTask {
                         do {
